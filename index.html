@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tableau de Bord des Tâches</title>
+<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <header>Gestionnaire de Tâches</header>
+    <main>
+        <h2>Ajouter une tâche</h2>
+        <form id="task-form">
+            <div>
+                <label for="task-name">Nom de la tâche :</label>
+                <input type="text" id="task-name" name="task-name" required>
+            </div>
+            <div>
+                <label for="task-desc">Description de la tâche :</label>
+                <input type="text" id="task-desc" name="task-desc" required>
+            </div>
+            <div>
+                <label for="task-deadline">Date limite :</label>
+                <input type="date" id="task-deadline" name="task-deadline" required>
+            </div>
+            <button type="submit">Ajouter la tâche</button>
+        </form>
+
+    <h2>Liste des tâches</h2>
+    <div id="task-list"></div>
+    </main>
+
+</body>
+<script src="script.js"></script>
+</html>
